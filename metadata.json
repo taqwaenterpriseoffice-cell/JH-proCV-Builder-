@@ -1,0 +1,8 @@
+{
+  "name": "JH ProCV Builder",
+  "description": "A high-end, mobile-first professional resume builder with AI-powered summary generation, multiple themes, and PDF/Image export capabilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

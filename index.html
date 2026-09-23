@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JH Soft CV | Professional Resume &amp; Career Platform</title>
+    <meta name="description" content="JH Soft CV - Premium Resume &amp; Career Document Platform (cv.jhsoft.online by JH Soft). Create ATS-friendly, executive, and tech resumes with AI assistance.">
+    <meta property="og:title" content="JH Soft CV | Professional Resume &amp; Career Platform">
+    <meta property="og:description" content="JH Soft CV by JH Soft. Create, customize, and export professional career resumes with live preview and AI tools.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Cline x1='16' y1='13' x2='8' y2='13'/%3E%3Cline x1='16' y1='17' x2='8' y2='17'/%3E%3Cpolyline points='10 9 9 9 8 9'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#eff6ff',
+                100: '#dbeafe',
+                500: '#3b82f6',
+                600: '#2563eb',
+                700: '#1d4ed8',
+                900: '#1e3a8a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;600;700&family=Anek+Bangla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .font-serif { font-family: 'Libre Baskerville', serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .font-condensed { font-family: 'Roboto Condensed', sans-serif; }
+        .font-bengali { font-family: 'SolaimanLipi', 'Kalpurush', 'Hind Siliguri', 'Noto Sans Bengali', sans-serif; }
+        .font-kalpurush { font-family: 'Kalpurush', 'SolaimanLipi', 'Noto Sans Bengali', sans-serif; }
+        .font-solaiman { font-family: 'SolaimanLipi', 'Kalpurush', 'Hind Siliguri', sans-serif; }
+        .font-noto-bengali { font-family: 'Noto Sans Bengali', 'Hind Siliguri', sans-serif; }
+        .font-noto-serif-bengali { font-family: 'Noto Serif Bengali', 'SolaimanLipi', serif; }
+        .font-anek-bangla { font-family: 'Anek Bangla', 'Hind Siliguri', sans-serif; }
+        
+        /* Fix for text clipping and link wrapping */
+        #resume-content, #resume-content * {
+            line-height: 1.5 !important;
+            overflow-wrap: anywhere !important;
+            word-break: normal !important;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        body {
+            overscroll-behavior-y: contain;
+        }
+
+        #resume-content {
+            box-sizing: border-box;
+            background: white;
+        }
+
+        @media print {
+            body {
+                background: white !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            body * {
+                visibility: hidden;
+            }
+            #resume-content, #resume-content * {
+                visibility: visible;
+            }
+            #resume-content {
+                position: static !important;
+                width: 210mm !important;
+                max-width: 210mm !important;
+                margin: 0 auto !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+                border: none !important;
+                background: white !important;
+            }
+            .a4-page-sheet {
+                width: 210mm !important;
+                min-height: 297mm !important;
+                height: 297mm !important;
+                max-height: 297mm !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+                border: none !important;
+                page-break-after: always !important;
+                break-after: page !important;
+                overflow: hidden !important;
+                box-sizing: border-box !important;
+            }
+            .a4-page-sheet:last-child {
+                page-break-after: auto !important;
+                break-after: auto !important;
+            }
+            .a4-page-footer {
+                display: flex !important;
+                visibility: visible !important;
+            }
+            .page-break-avoid, tr, table, .break-inside-avoid, [data-avoid-break] {
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
+            }
+            h1, h2, h3, h4, .section-title, [data-heading] {
+                break-after: avoid !important;
+                page-break-after: avoid !important;
+            }
+            @page {
+                size: A4 portrait;
+                margin: 0;
+            }
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
